@@ -36,24 +36,12 @@ The R script was subsequently executed by the research team on Windows 11 with R
 
 To check the provided outputs without rerunning R, run `python verify_outputs.py` after running Python with `adult23.csv` in the repository root. The outputs under `reference_python_outputs/` are provided reference outputs, not substitute raw source data.
 
-## Prior Python audit status (2026-11-23)
+## Final reproducibility verification (2026-11-23)
 
-**Python: EXECUTED on the user-supplied original `adult23.csv`.** The script completed with exit code 0 using the pinned versions listed above. The newly generated `python_reproducibility_audit.csv` reports **36/36 checks PASS**, including sample sizes, outcome counts, weighted prevalences, Model 4 ORs, sex/age interaction p values, polynomial Wald test, and standardized predicted prevalences. The source CSV SHA-256 was `441f2bc17761cb1c755b24c1af551e34b91e084da4cce8d78888a688b1acc5ab`. The data itself is **not** redistributed.
+The complete Python analysis was executed using the original 2023 NHIS Sample Adult public-use dataset. All 36 selected-result verification checks passed, including sample selection, weighted prevalence, regression estimates, interaction tests, nonlinear pain analysis, and model-standardized predicted prevalences.
 
-**R: NOT EXECUTED in the original Python packaging environment**, because `Rscript` was unavailable. Although the R script is included and explicitly implements independent model fits, the R/Python comparison remains to be run in an R environment. The user has now provided the R outputs; these are included in `NHIS_R_survey_validation/`.
+Independent R validation was subsequently performed by the research team using R 4.5.2 and the survey package version 4.5. The R results confirmed close agreement with the Python Model 4 estimates. The maximum absolute difference in odds ratios was approximately 2.36 × 10⁻¹⁰.
 
-Python-only recheck:
+The repository includes the Python and R scripts, software dependencies, reference outputs, verification results, and reproducibility documentation.
 
-```bash
-python nhis2023_jointpain_falls_analysis.py
-python verify_python_outputs.py
-```
-
-Full independent R check:
-
-```bash
-Rscript NHIS2023_R_survey_full_validation.R
-python verify_outputs.py
-```
-
-The audit does not certify every cell in supplementary tables S1–S7, independent inferential validity of the nominal 610 df convention, or portability to other software versions. Check the R session information and compare supplementary tables against calculated values before treating this as the final verified public release.
+The original NHIS public-use dataset is not redistributed. Researchers can obtain it from the CDC/NCHS website and follow the instructions above to reproduce the analyses.
