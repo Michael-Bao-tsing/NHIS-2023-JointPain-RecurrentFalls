@@ -1,0 +1,10 @@
+adult23.csv
+adult23(1).csv
+nhis_jointpain_project/
+NHIS_R_survey_validation/
+__pycache__/
+*.pyc
+.Rhistory
+reproducibility_check_results.csv
+.RData
+.DS_Store
