@@ -1,0 +1,60 @@
+{
+  "source_n": 29522,
+  "older_n": 9676,
+  "arthritis_older_n": 4654,
+  "primary_n": 4473,
+  "primary_recurrent_events": 709,
+  "primary_any_fall_events": 1387,
+  "weighted_population": 26510428.055999998,
+  "weighted_recurrent_prevalence": 0.15001462758727177,
+  "weighted_recurrent_ci": [
+    0.13856982423403563,
+    0.1614594309405079
+  ],
+  "weighted_any_fall_prevalence": 0.3048321840345014,
+  "weighted_any_fall_ci": [
+    0.28859251678475173,
+    0.3210718512842511
+  ],
+  "design_strata": 52,
+  "design_psu": 662,
+  "design_df": 610,
+  "replication_check_all_age_n": 7469,
+  "replication_check_ms_joint_pain_pct": 58.464978170533776,
+  "model4_n": 4296,
+  "model4_events": 685,
+  "model4_moderate": {
+    "OR": 1.2735382805821989,
+    "CI_low": 1.0003671184285972,
+    "CI_high": 1.621304541332772,
+    "p": 0.04965380359220462
+  },
+  "model4_severe": {
+    "OR": 1.747145266960071,
+    "CI_low": 1.3356104295841964,
+    "CI_high": 2.2854842372047743,
+    "p": 5.107037055789104e-05
+  },
+  "trend": {
+    "OR": 1.3210070809290837,
+    "CI_low": 1.1542865683943557,
+    "CI_high": 1.5118080341974391,
+    "p": 5.723043626516354e-05
+  },
+  "continuous": {
+    "OR": 1.0759532052593375,
+    "CI_low": 1.037124940668205,
+    "CI_high": 1.1162351366865868,
+    "p": 0.00010199931203391719
+  },
+  "sex_interaction_p": 0.2860886727650184,
+  "age_interaction_p": 0.986070150946266,
+  "max_vif": 1.7387868830509419,
+  "nonlinearity_F": 0.1395617103514086,
+  "nonlinearity_p": 0.8697671126230268,
+  "model_standardized_prevalence_pct": [
+    12.36861758523267,
+    14.882788275777035,
+    18.72234689286517
+  ]
+}

@@ -1,0 +1,7 @@
+Stage,Included_n,Excluded_from_previous_n
+2023 NHIS Sample Adult respondents,29522,
+Aged >=65 years (valid age codes 65-85),9676,19846.0
+Doctor-diagnosed arthritis/related condition,4654,5022.0
+Valid past-30-day joint-symptom status,4521,133.0
+Valid joint-pain exposure,4498,23.0
+Valid fall outcome (primary analytic sample),4473,25.0
